@@ -1,0 +1,450 @@
+#VRML_OBJ R2022a utf8
+Robot {
+  translation 0 -0.076 0.0524
+  rotation 0.5773499358549823 -0.5773489358550934 0.5773519358547601 2.0944
+  children [
+    SliderJoint {
+      jointParameters JointParameters {
+      }
+      device [
+        LinearMotor {
+          name "weight_position"
+          maxPosition 0.1349
+        }
+        PositionSensor {
+          name "weight_sensor"
+        }
+      ]
+      endPoint Solid {
+        translation -1.5341632252502402e-06 -9.677792379042164e-10 -0.018599995348419524
+        rotation -8.863203825423362e-05 -0.9999999957019975 2.7209681936963614e-05 8.252764485071507e-08
+        children [
+          Solid {
+            children [
+              Shape {
+                appearance PBRAppearance {
+                  baseColor 0.682353 0.682353 0.682353
+                  roughness 0.8
+                  metalness 0.2
+                }
+                geometry Cylinder {
+                  height 0.0082
+                  radius 0.016
+                }
+              }
+            ]
+            name "weight"
+          }
+          Solid {
+            translation 0 0 0.0064
+            rotation 0 0 1 -2.094395307179586
+            children [
+              Solid {
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Cylinder {
+                      height 0.0045
+                      radius 0.008
+                    }
+                  }
+                ]
+                name "ring"
+              }
+              Solid {
+                translation -0.008 0.0085 -1.46641e-15
+                rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Capsule {
+                      height 0.01
+                      radius 0.0023
+                      top FALSE
+                      subdivision 10
+                    }
+                  }
+                ]
+                name "wing1"
+              }
+              Solid {
+                translation -0.008 -0.0085 0
+                rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Capsule {
+                      height 0.01
+                      radius 0.0023
+                      top FALSE
+                      subdivision 10
+                    }
+                  }
+                ]
+                name "wing2"
+              }
+            ]
+            name "winged screw 4"
+          }
+          Solid {
+            translation 0 0 -0.0066
+            rotation 0 0 1 1.0472
+            children [
+              Solid {
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Cylinder {
+                      height 0.0045
+                      radius 0.008
+                    }
+                  }
+                ]
+                name "ring"
+              }
+              Solid {
+                translation -0.008 0.0085 -1.46641e-15
+                rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Capsule {
+                      height 0.01
+                      radius 0.0023
+                      top FALSE
+                      subdivision 10
+                    }
+                  }
+                ]
+                name "wing1"
+              }
+              Solid {
+                translation -0.008 -0.0085 0
+                rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                    }
+                    geometry Capsule {
+                      height 0.01
+                      radius 0.0023
+                      top FALSE
+                      subdivision 10
+                    }
+                  }
+                ]
+                name "wing2"
+              }
+            ]
+            name "winged screw 3"
+          }
+        ]
+        name "cylinder"
+        boundingObject Cylinder {
+          height 0.0082
+          radius 0.016
+        }
+        physics Physics {
+          density -1
+          mass 0.062
+        }
+      }
+    }
+    Solid {
+      translation 0 0 -0.1227
+      rotation 0 1 0 4.692820414042842e-06
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0045
+                radius 0.008
+              }
+            }
+          ]
+          name "ring"
+        }
+        Solid {
+          translation -0.008 0.0085 -1.46641e-15
+          rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Capsule {
+                height 0.01
+                radius 0.0023
+                top FALSE
+                subdivision 10
+              }
+            }
+          ]
+          name "wing1"
+        }
+        Solid {
+          translation -0.008 -0.0085 0
+          rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Capsule {
+                height 0.01
+                radius 0.0023
+                top FALSE
+                subdivision 10
+              }
+            }
+          ]
+          name "wing2"
+        }
+      ]
+      name "winged screw 1"
+    }
+    Solid {
+      translation 0 0 -0.1193
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.647059 0.647059 0.647059
+                roughness 0.3
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.01
+              }
+            }
+          ]
+          name "ring"
+        }
+      ]
+      name "flat washer 1"
+    }
+    Solid {
+      translation 0 0 -0.116
+      rotation 0 1 0 0
+      children [
+        Solid {
+          translation -0.003 0 0
+          rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.004 0.015 0.015
+              }
+            }
+          ]
+          name "base"
+        }
+        Solid {
+          translation -0.0099 0 0.003
+          rotation -0.7071067811862364 9.381857096790022e-07 0.7071067811862364 3.1415853071795863
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.01 0.015 0.0013
+              }
+            }
+          ]
+          name "tooth1"
+        }
+        Solid {
+          translation -0.004 0 0.003
+          rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.01 0.015 0.002
+              }
+            }
+          ]
+          name "tooth2"
+        }
+      ]
+      name "clamp 1"
+    }
+    Solid {
+      translation 0 0 -0.036
+      rotation 1 0 0 3.14159
+      children [
+        Solid {
+          translation -0.003 0 0
+          rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.004 0.015 0.015
+              }
+            }
+          ]
+          name "base"
+        }
+        Solid {
+          translation -0.0099 0 0.003
+          rotation -0.7071067811862364 9.381857096790022e-07 0.7071067811862364 3.1415853071795863
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.01 0.015 0.0013
+              }
+            }
+          ]
+          name "tooth1"
+        }
+        Solid {
+          translation -0.004 0 0.003
+          rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0 0 0.498039
+                roughness 0.6
+                metalness 0.8
+              }
+              geometry Box {
+                size 0.01 0.015 0.002
+              }
+            }
+          ]
+          name "tooth2"
+        }
+      ]
+      name "clamp 2"
+    }
+    Solid {
+      translation 0 0 -0.0329
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.647059 0.647059 0.647059
+                roughness 0.3
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.002
+                radius 0.01
+              }
+            }
+          ]
+          name "ring"
+        }
+      ]
+      name "flat washer 2"
+    }
+    Solid {
+      translation 0 0 -0.03
+      children [
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0045
+                radius 0.008
+              }
+            }
+          ]
+          name "ring"
+        }
+        Solid {
+          translation -0.008 0.0085 -1.46641e-15
+          rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Capsule {
+                height 0.01
+                radius 0.0023
+                top FALSE
+                subdivision 10
+              }
+            }
+          ]
+          name "wing1"
+        }
+        Solid {
+          translation -0.008 -0.0085 0
+          rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Capsule {
+                height 0.01
+                radius 0.0023
+                top FALSE
+                subdivision 10
+              }
+            }
+          ]
+          name "wing2"
+        }
+      ]
+      name "winged screw 2"
+    }
+    Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.596078 0.596078 0.596078
+            roughness 0.6
+          }
+          geometry Cylinder {
+            height 0.25
+            radius 0.0025
+          }
+        }
+      ]
+      name "rod"
+    }
+  ]
+  name "threaded rod"
+  boundingObject Cylinder {
+    height 0.25
+    radius 0.0025
+  }
+  physics Physics {
+    density -1
+    mass 0.042
+  }
+}

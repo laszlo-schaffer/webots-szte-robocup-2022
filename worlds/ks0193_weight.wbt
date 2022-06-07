@@ -1,0 +1,1229 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation -0.007444056789458444 -0.998972043770691 0.044715118060047014 5.953303177155531
+  position -0.69980798307583 0.009017893471261829 0.2556111248520461
+  follow "ks0193:keyes_arduino:arduino_base"
+  followType "None"
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation 0 0.0200022 0.052
+  rotation -1 0 0 0
+  children [
+    Solid {
+      translation 0 -0.076 0.0524
+      rotation 0.5773499358549823 -0.5773489358550934 0.5773519358547601 2.0944
+      children [
+        SliderJoint {
+          jointParameters JointParameters {
+          }
+          device [
+            LinearMotor {
+              name "weight_position"
+              maxPosition 0.1349
+            }
+            PositionSensor {
+              name "weight_sensor"
+            }
+          ]
+          endPoint Solid {
+            translation 0 0 -0.018599900000000003
+            rotation 0.0041484412817744815 0.9999414410999783 -0.009995239158239334 -1.322146381710354e-06
+            children [
+              Solid {
+                children [
+                  Shape {
+                    appearance PBRAppearance {
+                      baseColor 0.682353 0.682353 0.682353
+                      roughness 0.8
+                      metalness 0.2
+                    }
+                    geometry Cylinder {
+                      height 0.0082
+                      radius 0.016
+                    }
+                  }
+                ]
+                name "weight"
+              }
+              Solid {
+                translation 0 0 0.0064
+                rotation 0 0 1 -2.094395307179586
+                children [
+                  Solid {
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Cylinder {
+                          height 0.0045
+                          radius 0.008
+                        }
+                      }
+                    ]
+                    name "ring"
+                  }
+                  Solid {
+                    translation -0.008 0.0085 -1.46641e-15
+                    rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Capsule {
+                          height 0.01
+                          radius 0.0023
+                          top FALSE
+                          subdivision 10
+                        }
+                      }
+                    ]
+                    name "wing1"
+                  }
+                  Solid {
+                    translation -0.008 -0.0085 0
+                    rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Capsule {
+                          height 0.01
+                          radius 0.0023
+                          top FALSE
+                          subdivision 10
+                        }
+                      }
+                    ]
+                    name "wing2"
+                  }
+                ]
+                name "winged screw 4"
+              }
+              Solid {
+                translation 0 0 -0.0066
+                rotation 0 0 1 1.0472
+                children [
+                  Solid {
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Cylinder {
+                          height 0.0045
+                          radius 0.008
+                        }
+                      }
+                    ]
+                    name "ring"
+                  }
+                  Solid {
+                    translation -0.008 0.0085 -1.46641e-15
+                    rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Capsule {
+                          height 0.01
+                          radius 0.0023
+                          top FALSE
+                          subdivision 10
+                        }
+                      }
+                    ]
+                    name "wing1"
+                  }
+                  Solid {
+                    translation -0.008 -0.0085 0
+                    rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+                    children [
+                      Shape {
+                        appearance PBRAppearance {
+                        }
+                        geometry Capsule {
+                          height 0.01
+                          radius 0.0023
+                          top FALSE
+                          subdivision 10
+                        }
+                      }
+                    ]
+                    name "wing2"
+                  }
+                ]
+                name "winged screw 3"
+              }
+            ]
+            name "cylinder"
+            boundingObject Cylinder {
+              height 0.0082
+              radius 0.016
+            }
+            physics Physics {
+              density -1
+              mass 0.068
+            }
+          }
+        }
+        Solid {
+          translation 0 0 -0.1227
+          rotation 0 1 0 4.692820414042842e-06
+          children [
+            Solid {
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cylinder {
+                    height 0.0045
+                    radius 0.008
+                  }
+                }
+              ]
+              name "ring"
+            }
+            Solid {
+              translation -0.008 0.0085 -1.46641e-15
+              rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Capsule {
+                    height 0.01
+                    radius 0.0023
+                    top FALSE
+                    subdivision 10
+                  }
+                }
+              ]
+              name "wing1"
+            }
+            Solid {
+              translation -0.008 -0.0085 0
+              rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Capsule {
+                    height 0.01
+                    radius 0.0023
+                    top FALSE
+                    subdivision 10
+                  }
+                }
+              ]
+              name "wing2"
+            }
+          ]
+          name "winged screw 1"
+        }
+        Solid {
+          translation 0 0 -0.1193
+          children [
+            Solid {
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.647059 0.647059 0.647059
+                    roughness 0.3
+                    metalness 0.6
+                  }
+                  geometry Cylinder {
+                    height 0.002
+                    radius 0.01
+                  }
+                }
+              ]
+              name "ring"
+            }
+          ]
+          name "flat washer 1"
+        }
+        Solid {
+          translation 0 0 -0.116
+          rotation 0 1 0 0
+          children [
+            Solid {
+              translation -0.003 0 0
+              rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.004 0.015 0.015
+                  }
+                }
+              ]
+              name "base"
+            }
+            Solid {
+              translation -0.0099 0 0.003
+              rotation -0.7071067811862364 9.381857096790022e-07 0.7071067811862364 3.1415853071795863
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.01 0.015 0.0013
+                  }
+                }
+              ]
+              name "tooth1"
+            }
+            Solid {
+              translation -0.004 0 0.003
+              rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.01 0.015 0.002
+                  }
+                }
+              ]
+              name "tooth2"
+            }
+          ]
+          name "clamp 1"
+        }
+        Solid {
+          translation 0 0 -0.036
+          rotation 1 0 0 3.14159
+          children [
+            Solid {
+              translation -0.003 0 0
+              rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.004 0.015 0.015
+                  }
+                }
+              ]
+              name "base"
+            }
+            Solid {
+              translation -0.0099 0 0.003
+              rotation -0.7071067811862364 9.381857096790022e-07 0.7071067811862364 3.1415853071795863
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.01 0.015 0.0013
+                  }
+                }
+              ]
+              name "tooth1"
+            }
+            Solid {
+              translation -0.004 0 0.003
+              rotation -0.7071067811862364 9.381857096790023e-07 0.7071067811862364 3.14159
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0 0 0.498039
+                    roughness 0.6
+                    metalness 0.8
+                  }
+                  geometry Box {
+                    size 0.01 0.015 0.002
+                  }
+                }
+              ]
+              name "tooth2"
+            }
+          ]
+          name "clamp 2"
+        }
+        Solid {
+          translation 0 0 -0.0329
+          children [
+            Solid {
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                    baseColor 0.647059 0.647059 0.647059
+                    roughness 0.3
+                    metalness 0.6
+                  }
+                  geometry Cylinder {
+                    height 0.002
+                    radius 0.01
+                  }
+                }
+              ]
+              name "ring"
+            }
+          ]
+          name "flat washer 2"
+        }
+        Solid {
+          translation 0 0 -0.03
+          children [
+            Solid {
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Cylinder {
+                    height 0.0045
+                    radius 0.008
+                  }
+                }
+              ]
+              name "ring"
+            }
+            Solid {
+              translation -0.008 0.0085 -1.46641e-15
+              rotation 0.3574058186283875 0.8628565621288802 -0.35740681862788 1.71777
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Capsule {
+                    height 0.01
+                    radius 0.0023
+                    top FALSE
+                    subdivision 10
+                  }
+                }
+              ]
+              name "wing1"
+            }
+            Solid {
+              translation -0.008 -0.0085 0
+              rotation -0.3574058186283875 0.8628565621288802 0.35740681862788 1.71777
+              children [
+                Shape {
+                  appearance PBRAppearance {
+                  }
+                  geometry Capsule {
+                    height 0.01
+                    radius 0.0023
+                    top FALSE
+                    subdivision 10
+                  }
+                }
+              ]
+              name "wing2"
+            }
+          ]
+          name "winged screw 2"
+        }
+        Solid {
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.596078 0.596078 0.596078
+                roughness 0.6
+              }
+              geometry Cylinder {
+                height 0.25
+                radius 0.0025
+              }
+            }
+          ]
+          name "rod"
+        }
+      ]
+      name "threaded rod"
+      boundingObject Cylinder {
+        height 0.25
+        radius 0.0025
+      }
+      physics Physics {
+        density -1
+        mass 0.041
+        damping Damping {
+          linear 0.99
+          angular 0.99
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.10525 0 -0.019
+      }
+      device [
+        PositionSensor {
+          name "motor_R_encoder"
+        }
+        RotationalMotor {
+          name "motor_R"
+          maxVelocity 16.76
+          maxTorque 0.137293
+        }
+      ]
+      endPoint Solid {
+        translation -0.105 0 -0.019
+        rotation 0 1 0 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.239216 0.239216 0.239216
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              bottom FALSE
+              height 0.026
+              radius 0.03335
+              top FALSE
+              subdivision 32
+            }
+            castShadows FALSE
+            isPickable FALSE
+          }
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.262745 0.262745 0.262745
+                emissiveColor 0.909804 0.909804 0.909804
+                shininess 0.6
+                specularColor 0.447059 0.447059 0.447059
+              }
+              texture ImageTexture {
+                url [
+                  "../libraries/keyes_wheel.png"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.026
+              radius 0.03335
+              side FALSE
+              subdivision 32
+            }
+          }
+        ]
+        name "wheel_geom1"
+        boundingObject Cylinder {
+          height 0.026
+          radius 0.03335
+        }
+        physics Physics {
+          density -1
+          mass 0.025
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.10525 0 -0.019
+      }
+      device [
+        PositionSensor {
+          name "motor_L_encoder"
+        }
+        RotationalMotor {
+          name "motor_L"
+          maxVelocity 16.76
+          maxTorque 0.137293
+        }
+      ]
+      endPoint Solid {
+        translation 0.105 0 -0.019
+        rotation 0 1 0 1.5708
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.239216 0.239216 0.239216
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              bottom FALSE
+              height 0.026
+              radius 0.03335
+              top FALSE
+              subdivision 32
+            }
+            castShadows FALSE
+            isPickable FALSE
+          }
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.262745 0.262745 0.262745
+                emissiveColor 0.909804 0.909804 0.909804
+                shininess 0.6
+                specularColor 0.447059 0.447059 0.447059
+              }
+              texture ImageTexture {
+                url [
+                  "../libraries/keyes_wheel.png"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.026
+              radius 0.03335
+              side FALSE
+              subdivision 32
+            }
+          }
+        ]
+        name "wheel_geom"
+        boundingObject Cylinder {
+          height 0.026
+          radius 0.03335
+        }
+        physics Physics {
+          density -1
+          mass 0.025
+        }
+      }
+    }
+    Solid {
+      translation 0.024 -0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_1"
+    }
+    Solid {
+      translation 0 0 0.013
+      rotation 0 1 0 0
+      children [
+        InertialUnit {
+          translation 0.0232 -0.0171 0.0112
+          rotation 0 0 1 -1.5707853071795865
+          name "imu"
+        }
+        Accelerometer {
+          translation 0.0232 -0.0171 0.0112
+          rotation 0 0 1 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.203922 0.203922 0.203922
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.005 0.005 0.0001
+              }
+            }
+          ]
+          name "mpu6050_acc"
+        }
+        Gyro {
+          translation 0.0232 -0.0171 0.0112
+          rotation 0 0 1 3.141592653589793
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.203922 0.203922 0.203922
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.005 0.005 0.0001
+              }
+            }
+          ]
+          name "mpu6050_gyro"
+        }
+        Solid {
+          translation 0.002 0.024 0.0135
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.06 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part4"
+        }
+        Solid {
+          translation 0 0 0.01
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.219608 0.219608 0.219608
+                }
+                texture ImageTexture {
+                  url [
+                    "../libraries/keyes_ardui_top.jpg"
+                  ]
+                  filtering 5
+                }
+              }
+              geometry Box {
+                size 0.0687 0.05315 0.0025
+              }
+            }
+          ]
+          name "arduino_top"
+        }
+        Solid {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.2 0.2 0.2
+                }
+                texture ImageTexture {
+                  url [
+                    "../libraries/keyes_ardui_base.jpg"
+                  ]
+                  filtering 5
+                }
+              }
+              geometry Box {
+                size 0.0687 0.05315 0.0025
+              }
+            }
+          ]
+          name "arduino_base"
+        }
+        Solid {
+          translation 0.002 0.024 0.0038
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.06 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part3"
+        }
+        Solid {
+          translation 0.012 -0.023 0.0135
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.04 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part2"
+        }
+        Solid {
+          translation 0.012 -0.023 0.0037
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.04 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part"
+        }
+      ]
+      name "keyes_arduino"
+      boundingObject Transform {
+        translation 0 0 0.007
+        children [
+          Box {
+            size 0.066 0.054 0.021
+          }
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 0.05
+      }
+    }
+    Solid {
+      translation 0 0 -0.012
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.168627 0.168627 0.168627
+            roughness 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.0615 0.0753 0.0195
+          }
+        }
+      ]
+      name "battery"
+    }
+    Solid {
+      translation -0.064 -0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_1"
+    }
+    Solid {
+      translation 0.064 -0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_2"
+    }
+    Solid {
+      translation 0.024 0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_2"
+    }
+    Solid {
+      translation -0.024 0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_3"
+    }
+    Solid {
+      translation -0.024 -0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_4"
+    }
+    Solid {
+      translation -0.064 0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_3"
+    }
+    Solid {
+      translation 0.064 0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_4"
+    }
+    Solid {
+      translation 0.07 0 -0.0245
+      rotation 0 0 1 3.14159
+      children [
+        Solid {
+          translation -0.0185 0 0.005
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0075
+                radius 0.004
+              }
+            }
+          ]
+          name "shaft"
+        }
+        Solid {
+          translation 0.007 0 0.021
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_top"
+        }
+        Solid {
+          translation -0.013 0 0.001
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_side"
+        }
+        Solid {
+          translation 0.023 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.564706 0.564706 0.564706
+                metalness 0.8
+              }
+              geometry Cylinder {
+                height 0.025
+                radius 0.0164
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base2"
+        }
+        Solid {
+          translation 0 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.780392 0.780392 0.780392
+                roughness 0.8
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.0216
+                radius 0.0185
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base"
+        }
+      ]
+      name "motor_geom2"
+    }
+    Solid {
+      translation -0.07 0 -0.0245
+      rotation 0 1 0 0
+      children [
+        Solid {
+          translation -0.0185 0 0.005
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0075
+                radius 0.004
+              }
+            }
+          ]
+          name "shaft"
+        }
+        Solid {
+          translation 0.007 0 0.021
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_top"
+        }
+        Solid {
+          translation -0.013 0 0.001
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_side"
+        }
+        Solid {
+          translation 0.023 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.564706 0.564706 0.564706
+                metalness 0.8
+              }
+              geometry Cylinder {
+                height 0.025
+                radius 0.0164
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base2"
+        }
+        Solid {
+          translation 0 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.780392 0.780392 0.780392
+                roughness 0.8
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.0216
+                radius 0.0185
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base"
+        }
+      ]
+      name "motor_geom1"
+    }
+    Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            transparency 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.1645 0.0767 0.0035
+          }
+        }
+      ]
+      name "base"
+    }
+    Solid {
+      translation 0 0 0.045
+      children [
+        Shape {
+          appearance PBRAppearance {
+            transparency 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.1387 0.0746 0.0035
+          }
+        }
+      ]
+      name "top"
+    }
+  ]
+  name "ks0193"
+  boundingObject Group {
+    children [
+      Transform {
+        translation 0 0 0.023
+        children [
+          Box {
+            size 0.165 0.076 0.0479
+          }
+        ]
+      }
+      Transform {
+        translation 0 0 -0.012
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.062 0.075 0.022
+          }
+        ]
+      }
+      Transform {
+        translation 0.057 0 -0.0265
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.046 0.0396 0.037
+          }
+        ]
+      }
+      Transform {
+        translation -0.057 0 -0.0265
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.046 0.0396 0.037
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 1.08
+    centerOfMass [
+      0 0 0
+    ]
+  }
+  controller "ks0193_weight"
+}
+RectangleArena {
+  translation 0 0 -0.0001
+  floorSize 0.5 0.5
+  floorTileSize 1 1
+  wallHeight 1e-05
+}
+RectangleArena {
+  translation 0 0 -0.001
+  name "floor"
+  floorSize 2 2
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.025
+  wallHeight 0.05
+}

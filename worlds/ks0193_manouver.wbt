@@ -1,0 +1,801 @@
+#VRML_SIM R2022a utf8
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.0031744167419032517 -0.9998674177038511 -0.015970913955717207 5.889835326733651
+  position -1.9552256791270257 0.4105227495006126 0.8405611158191535
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+Robot {
+  translation 0 0.86 0.05
+  rotation 1 0 0 2.38716e-06
+  children [
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor -0.10525 0 -0.019
+      }
+      device [
+        PositionSensor {
+          name "motor_R_encoder"
+        }
+        RotationalMotor {
+          name "motor_R"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation -0.10525003507216833 4.424891976396885e-06 -0.018973322765147294
+        rotation 0.05304655173723362 0.9971509003258203 0.053629705650835004 1.5761046792699216
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.239216 0.239216 0.239216
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              bottom FALSE
+              height 0.026
+              radius 0.03335
+              top FALSE
+              subdivision 32
+            }
+            castShadows FALSE
+            isPickable FALSE
+          }
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.262745 0.262745 0.262745
+                emissiveColor 0.909804 0.909804 0.909804
+                shininess 0.6
+                specularColor 0.447059 0.447059 0.447059
+              }
+              texture ImageTexture {
+                url [
+                  "../libraries/keyes_wheel.png"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.026
+              radius 0.03335
+              side FALSE
+              subdivision 32
+            }
+          }
+        ]
+        name "wheel_geom1"
+        boundingObject Cylinder {
+          height 0.026
+          radius 0.03335
+        }
+        physics Physics {
+          density -1
+          mass 0.025
+        }
+      }
+    }
+    HingeJoint {
+      jointParameters HingeJointParameters {
+        anchor 0.10525 0 -0.019
+      }
+      device [
+        PositionSensor {
+          name "motor_L_encoder"
+        }
+        RotationalMotor {
+          name "motor_L"
+          maxVelocity 100
+        }
+      ]
+      endPoint Solid {
+        translation 0.10525008492314628 4.912163607296451e-06 -0.018973936978007002
+        rotation 0.05304644463126914 0.9971509009999698 0.05362979905733694 1.576104772353934
+        children [
+          Shape {
+            appearance PBRAppearance {
+              baseColor 0.239216 0.239216 0.239216
+              roughness 1
+              metalness 0
+            }
+            geometry Cylinder {
+              bottom FALSE
+              height 0.026
+              radius 0.03335
+              top FALSE
+              subdivision 32
+            }
+            castShadows FALSE
+            isPickable FALSE
+          }
+          Shape {
+            appearance Appearance {
+              material Material {
+                diffuseColor 0.262745 0.262745 0.262745
+                emissiveColor 0.909804 0.909804 0.909804
+                shininess 0.6
+                specularColor 0.447059 0.447059 0.447059
+              }
+              texture ImageTexture {
+                url [
+                  "../libraries/keyes_wheel.png"
+                ]
+              }
+            }
+            geometry Cylinder {
+              height 0.026
+              radius 0.03335
+              side FALSE
+              subdivision 32
+            }
+          }
+        ]
+        name "wheel_geom"
+        boundingObject Cylinder {
+          height 0.026
+          radius 0.03335
+        }
+        physics Physics {
+          density -1
+          mass 0.025
+        }
+      }
+    }
+    Solid {
+      translation 0.024 -0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_1"
+    }
+    Solid {
+      translation 0 0 0.013
+      rotation 0 1 0 0
+      children [
+        Accelerometer {
+          translation 0.0232 -0.0171 0.0112
+          rotation 0 0 1 3.14159
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.203922 0.203922 0.203922
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.005 0.005 0.0001
+              }
+            }
+          ]
+          name "mpu6050_acc"
+        }
+        Gyro {
+          translation 0.0232 -0.0171 0.0112
+          rotation 0 0 1 3.141592653589793
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.203922 0.203922 0.203922
+                roughness 1
+                metalness 0
+              }
+              geometry Box {
+                size 0.005 0.005 0.0001
+              }
+            }
+          ]
+          name "mpu6050_gyro"
+        }
+        Solid {
+          translation 0.002 0.024 0.0135
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.06 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part4"
+        }
+        Solid {
+          translation 0 0 0.01
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.219608 0.219608 0.219608
+                }
+                texture ImageTexture {
+                  url [
+                    "../libraries/keyes_ardui_top.jpg"
+                  ]
+                  filtering 5
+                }
+              }
+              geometry Box {
+                size 0.0687 0.05315 0.0025
+              }
+            }
+          ]
+          name "arduino_top"
+        }
+        Solid {
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  diffuseColor 0.2 0.2 0.2
+                }
+                texture ImageTexture {
+                  url [
+                    "../libraries/keyes_ardui_base.jpg"
+                  ]
+                  filtering 5
+                }
+              }
+              geometry Box {
+                size 0.0687 0.05315 0.0025
+              }
+            }
+          ]
+          name "arduino_base"
+        }
+        Solid {
+          translation 0.002 0.024 0.0038
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.06 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part3"
+        }
+        Solid {
+          translation 0.012 -0.023 0.0135
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.04 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part2"
+        }
+        Solid {
+          translation 0.012 -0.023 0.0037
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 1 1 0
+                roughness 1
+                metalness 0
+                emissiveColor 1 1 0
+                emissiveIntensity 0.2
+              }
+              geometry Box {
+                size 0.04 0.0025 0.005
+              }
+            }
+          ]
+          name "ardui_part"
+        }
+      ]
+      name "keyes_arduino"
+      boundingObject Transform {
+        translation 0 0 0.007
+        children [
+          Box {
+            size 0.066 0.054 0.021
+          }
+        ]
+      }
+      physics Physics {
+        density -1
+        mass 0.05
+      }
+    }
+    Solid {
+      translation 0 0 -0.012
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 0.168627 0.168627 0.168627
+            roughness 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.0615 0.0753 0.0195
+          }
+        }
+      ]
+      name "battery"
+    }
+    Solid {
+      translation -0.064 -0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_1"
+    }
+    Solid {
+      translation 0.064 -0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_2"
+    }
+    Solid {
+      translation 0.024 0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_2"
+    }
+    Solid {
+      translation -0.024 0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_3"
+    }
+    Solid {
+      translation -0.024 -0.02 0.0065
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.01
+            radius 0.0035
+            subdivision 6
+          }
+        }
+      ]
+      name "spacer_ardui_4"
+    }
+    Solid {
+      translation -0.064 0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_3"
+    }
+    Solid {
+      translation 0.064 0.03 0.0222
+      children [
+        Shape {
+          appearance PBRAppearance {
+            baseColor 1 0.666667 0
+            roughness 0.2
+            metalness 0.8
+          }
+          geometry Cylinder {
+            height 0.042
+            radius 0.0035
+            subdivision 6
+          }
+          castShadows FALSE
+        }
+      ]
+      name "spacer_4"
+    }
+    Solid {
+      translation 0.07 0 -0.0245
+      rotation 0 0 1 3.14159
+      children [
+        Solid {
+          translation -0.0185 0 0.005
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0075
+                radius 0.004
+              }
+            }
+          ]
+          name "shaft"
+        }
+        Solid {
+          translation 0.007 0 0.021
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_top"
+        }
+        Solid {
+          translation -0.013 0 0.001
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_side"
+        }
+        Solid {
+          translation 0.023 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.564706 0.564706 0.564706
+                metalness 0.8
+              }
+              geometry Cylinder {
+                height 0.025
+                radius 0.0164
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base2"
+        }
+        Solid {
+          translation 0 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.780392 0.780392 0.780392
+                roughness 0.8
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.0216
+                radius 0.0185
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base"
+        }
+      ]
+      name "motor_geom2"
+    }
+    Solid {
+      translation -0.07 -3.18431e-07 -0.0245
+      rotation 0 1 0 0
+      children [
+        Solid {
+          translation -0.0185 0 0.005
+          rotation 0 1 0 1.5708
+          children [
+            Shape {
+              appearance PBRAppearance {
+              }
+              geometry Cylinder {
+                height 0.0075
+                radius 0.004
+              }
+            }
+          ]
+          name "shaft"
+        }
+        Solid {
+          translation 0.007 0 0.021
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_top"
+        }
+        Solid {
+          translation -0.013 0 0.001
+          rotation 0 1 0 -1.5707953071795862
+          children [
+            Shape {
+              appearance Appearance {
+                material Material {
+                  ambientIntensity 0.5
+                  diffuseColor 0.12549 0.12549 0.12549
+                  shininess 0.4
+                }
+              }
+              geometry Box {
+                size 0.043 0.0403 0.0035
+              }
+            }
+          ]
+          name "motor_attachment_side"
+        }
+        Solid {
+          translation 0.023 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.564706 0.564706 0.564706
+                metalness 0.8
+              }
+              geometry Cylinder {
+                height 0.025
+                radius 0.0164
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base2"
+        }
+        Solid {
+          translation 0 0 -0.0025
+          rotation 0 -0.9999999999999999 0 1.5707953071795862
+          children [
+            Shape {
+              appearance PBRAppearance {
+                baseColor 0.780392 0.780392 0.780392
+                roughness 0.8
+                metalness 0.6
+              }
+              geometry Cylinder {
+                height 0.0216
+                radius 0.0185
+                subdivision 64
+              }
+            }
+          ]
+          name "motor_base"
+        }
+      ]
+      name "motor_geom1"
+    }
+    Solid {
+      children [
+        Shape {
+          appearance PBRAppearance {
+            transparency 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.1645 0.0767 0.0035
+          }
+        }
+      ]
+      name "base"
+    }
+    Solid {
+      translation 0 0 0.045
+      children [
+        Shape {
+          appearance PBRAppearance {
+            transparency 0.5
+            metalness 0
+          }
+          geometry Box {
+            size 0.1387 0.0746 0.0035
+          }
+        }
+      ]
+      name "top"
+    }
+  ]
+  name "ks0193"
+  boundingObject Group {
+    children [
+      Transform {
+        translation 0 0 0.023
+        children [
+          Box {
+            size 0.165 0.076 0.0479
+          }
+        ]
+      }
+      Transform {
+        translation 0 0 -0.012
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.062 0.075 0.022
+          }
+        ]
+      }
+      Transform {
+        translation 0.057 0 -0.0265
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.046 0.0396 0.037
+          }
+        ]
+      }
+      Transform {
+        translation -0.057 0 -0.0265
+        rotation 0 1 0 0
+        children [
+          Box {
+            size 0.046 0.0396 0.037
+          }
+        ]
+      }
+    ]
+  }
+  physics Physics {
+    density -1
+    mass 1
+    centerOfMass [
+      0 0 -0.007
+    ]
+  }
+  controller "ks0193_manouver"
+}
+RectangleArena {
+  translation 0 -0.5 0
+  floorSize 1 3
+  floorTileSize 3 6
+  wallHeight 1e-05
+}
+RectangleArena {
+  translation 0 -0.75 -0.0001
+  name "floor"
+  floorSize 2 4
+  floorTileSize 1 1
+  floorAppearance Parquetry {
+    type "light strip"
+  }
+  wallThickness 0.025
+}
+Solid {
+  translation 0 0.96 0.04
+  children [
+    Shape {
+      appearance Appearance {
+        material Material {
+          ambientIntensity 0
+          diffuseColor 0.00784314 0.00784314 0.00784314
+          emissiveColor 0.337255 0.168627 0
+          shininess 0.01
+          specularColor 0.666667 0.333333 0
+        }
+        texture ImageTexture {
+          url [
+            "../libraries/dark_wood.jpg"
+          ]
+        }
+      }
+      geometry Box {
+        size 1 0.1 0.08
+      }
+    }
+  ]
+  name "start"
+  boundingObject Box {
+    size 1 0.1 0.08
+  }
+  physics Physics {
+    density -1
+    mass 1
+  }
+}
+WaterBottle {
+  translation 0 -1.02 0
+}
